@@ -10,7 +10,14 @@ def kill_switch(switch):
         os.system('clear')
     else:
         print(users_dictionary)
+        find_highest_bid()
         exit()
+
+def find_highest_bid():
+    for key in users_dictionary:
+        if users_dictionary[key]:
+            exit()
+        
 
 while True:
     name = input("Bidder's Name: ")
